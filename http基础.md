@@ -102,7 +102,114 @@ url会被curl工具重写，线请求dns获得ip
 ## http请求和响应
   
   如何做出一个响应
-
+   需用编程
+   node.js有一个thttp模块可以做到
+   初始代码在我另一个写服务器的仓库中
+   
+   注意事项：
+   
+      这些代码就是服务器代码，一般放在服务器上
+      
+      path是不带查询参数路径/x
+      
+      query是查询参数的对象形式{a:'1'}
+      
+      querySthing是查询参数字符串形式？a=1
+      
+      pathWithQuery是带查询参数的路径，一般不用
+      
+      request是请求对象
+      
+      response是响应对象
+# 代码逻辑
+   语法`这种字符串`里面可以回车
+   回车只能用\n表示
+   
+   逻辑
+      每次收到请求都会把中间的代码执行一遍
+      
+      if else 判断路径，并且返回响应
+      
+      如果是已知路径，一律返回200
+      
+      如果是未知路径一律返回404
+      
+      Content-Type表示内容/语法
+      
+      response.write（）可以填写返回的内容
+      
+      response.end（）表示响应可以发给用户了
+      
+      
+      注意：url的后缀没有用，Content-Type才是决定文件类型的关键
+      
+# http基础概念
+   响应
+      
+      协议名/版本 状态码 状态字符串 
+      
+      Content-Type响应体的格式
+      
+      回车
+      
+      响应体（也就是下载内容）
+      
+    细节
+    
+      三部分;状态行，响应头，响应体
+      常见的状态码是考点
+      文档在RFC2612第六章
+      
+  ## 用curl 构造请求
+  
+      curl -v http://127.0.0.1:8888
+      
+      设置请求动词
+        -X POST
+        注意大小写
+      设置路径和查询参数
+         直接在URL后面加
+       设置请求头
+         -H'Name:Value'或者--header'Name:Value'
+        设置请求体
+        -d'内容'或者--data'内容'
+        
+  ## 用node.js读取请求
+         读取请求动词
+         
+         request.method
+         
+         读取路径
+         
+         reques.url路径，带查询参数
+         
+         path纯路径，不带查询参数
+         
+         query只有查询参数
+         
+         读取请求头
+         
+         request.headers['Accept']
+         
+         读取请求体
+         
+  ## 用node.js读取请求  
+      设置响应状态码
+      
+         response.statusCode= 200
+         
+       设置响应头
+       
+       response.setHeader('Content-Type','text/html')
+       
+       
+       设置响应体
+       
+       response.write(内容)
+       可追加内容
+       
+       
+    
   
   
 
