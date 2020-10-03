@@ -40,3 +40,4 @@
   
  # 图片在本仓库另一个文件里
  ![图片](https://github.com/lnn520/blog/blob/master/%E5%86%85%E5%AD%98%E5%9B%BE.png)
+ ![原型图](https://github.com/lnn520/blog/blob/master/%E5%8E%9F%E5%9E%8B%E5%9B%BE.png)
