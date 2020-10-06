@@ -106,6 +106,94 @@
   
   undefined null 0 NaN ''
   
+ NaN 和 undefined 的区别
+ ![](https://github.com/lnn520/picture-blog/blob/main/%E7%A9%BA%E7%9A%84%E5%8C%BA%E5%88%AB.png) 
+ 
+### symbol 
+
+https://zhuanlan.zhihu.com/p/22652486
+
+# 变量的声明
+                              
+                              
+  
+  
+        三种声明方式
+        
+        var a = 1
+        
+        let a  = 1
+        
+        const a = 1
+        
+        区别：var是过时的不好使用的方式
+        
+        let是新的，更合理的方式
+        
+        const是声明必须赋值，且不能改的方式
+        
+## let声明
+  遵循块作用域，使用范围不能超出{}
+  
+  不能重复声明
+  
+  可以复制，也可以不赋值
+  
+  必须声明才能使用，否则报错
+  
+  全局声明的let变量，不会变成window的属性
+  
+## const 声明
+
+  跟let几乎一样
+  
+  只有一条不一样：声明时就要赋值，并且不能改
+  
+# name 和 'name'的区别
+  
+  name是变量
+  
+  值可变，可能是'name',也可能是'hello'
+  
+  'name'是字符串常量
+  
+  常量就是不变量
+  
+  'name'只能是'name',不能是其他值
+  
+  
+## 类型转换
+
+  number => string
+  
+  n+''
+  
+  string => number
+  
+  s - 0
+  
+  x => bool
+  
+  !!x
+  
+  x => string
+  
+  x.toString()
+  
+# object 复杂数据类型
+
+定义
+  
+  无序的数据集合，键值对集合
+  
+  let obj = {'name':'frank','age':18}
+  
+          
+  
+  
+
+
+
   
   
     
