@@ -107,6 +107,7 @@
   undefined null 0 NaN ''
   
  NaN 和 undefined 的区别
+ 
  ![](https://github.com/lnn520/picture-blog/blob/main/%E7%A9%BA%E7%9A%84%E5%8C%BA%E5%88%AB.png) 
  
 ### symbol 
@@ -360,9 +361,9 @@ https://zhuanlan.zhihu.com/p/22652486
     obj2.name = 'jack'
     
 # 总结
-![](https://github.com/lnn520/picture-blog/blob/main/(RT)2%7D%25KM%5BDHX3EA7VU25EH.png)
+![图一](https://github.com/lnn520/picture-blog/blob/main/(RT)2%7D%25KM%5BDHX3EA7VU25EH.png)
 
-![](https://github.com/lnn520/picture-blog/blob/main/2F2P%7BHIZ%7DE%24C7_J%60T(WPB%253.png)
+![图二](https://github.com/lnn520/picture-blog/blob/main/2F2P%7BHIZ%7DE%24C7_J%60T(WPB%253.png)
     
     
   
