@@ -361,10 +361,9 @@ https://zhuanlan.zhihu.com/p/22652486
     obj2.name = 'jack'
     
 # 总结
-![图一](https://github.com/lnn520/picture-blog/blob/main/(RT)2%7D%25KM%5BDHX3EA7VU25EH.png)
+![图一](https://github.com/lnn520/picture-blog/blob/main/%E5%88%A0%E6%94%B9%E6%80%BB%E7%BB%93%20(1).png)   
 
-![图二](https://github.com/lnn520/picture-blog/blob/main/2F2P%7BHIZ%7DE%24C7_J%60T(WPB%253.png)
-    
+![](https://github.com/lnn520/picture-blog/blob/main/%E5%88%A0%E6%94%B9%E6%80%BB%E7%BB%93%20(2).png)
     
   
           
