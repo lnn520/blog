@@ -143,6 +143,27 @@
     
     
 # 数组变化
+![](https://github.com/lnn520/picture-blog/blob/main/%E6%95%B0%E7%BB%84%E5%8F%98%E6%8D%A2.png)
+map n变n  fillter n变少
+
+![](https://github.com/lnn520/picture-blog/blob/main/%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%20(4).png)
+
+reduce n变1
+
+![](https://github.com/lnn520/picture-blog/blob/main/%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%20(1).png)
+
+![](https://github.com/lnn520/picture-blog/blob/main/%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%20(3).png)
+
+![](https://github.com/lnn520/picture-blog/blob/main/%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%20(5).png)
+
+
+![](https://github.com/lnn520/picture-blog/blob/main/%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%20(2).png)
+
+![](https://github.com/lnn520/picture-blog/blob/main/%E6%95%B0%E7%BB%84%E5%8F%98%E5%8C%96%20(6).png)
+
+
+
+
 
 
     
