@@ -70,3 +70,8 @@
   因为第一个参数要作为this，但是代码里没有this 所以只能用undefined占位
   其实用null也可以
   
+![](https://github.com/lnn520/picture-blog/blob/main/hanshu%20(1).png)
+
+![](https://github.com/lnn520/picture-blog/blob/main/hanshu%20(2).png)
+
+![](https://github.com/lnn520/picture-blog/blob/main/hanshu%20(3).png)
