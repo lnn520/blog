@@ -65,8 +65,18 @@ a 的保底值 但是 a 为空字符串有问题
   
   js有特殊逻辑，点前面不是对象，就把它转化为对象
   
-# void 
+# js三个重要知识
 
- 
+对象.__proto__ === 其构造函数.prototype
+
+Object.prototype是所有对象的(直接或间接)原型
+
+所有函数都是由Function构造的
+
+任何函数.__proto__ === Function.prototype
+
+![](https://github.com/lnn520/picture-blog/blob/main/js%E4%B8%96%E7%95%8C%E5%9B%BE.png)
+
+
     
     
