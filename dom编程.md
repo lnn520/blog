@@ -47,7 +47,7 @@
 * 里面最重要的函数就是addEventListener
 * 最后一层原型就是Object.prototype
 
-![](https://github.com/lnn520/picture-blog/blob/main/dom%20(3).png)
+![](https://github.com/lnn520/picture-blog/blob/main/dom%20(4).png)
 
 # 节点？元素？
 ### 节点Node包括一下几种
