@@ -74,4 +74,42 @@
 * 但是不能使用div1.appendChild('你好')
 #### 插入页面中
 * 你创建的标签默认处于JS线程中
-* 你必须把它插入到head或者body里面
+* 你必须把它插入到head或者body里面，它才会生效
+* document.body.appendChild(div)
+* 或者已在页面中的元素.appendChild(div)
+### 删
+#### 两种方法
+* 旧方法:parentNode.childChild(childNode)
+* 新方法:childNode.remove()
+### 改属性
+#### 写标准属性
+* 改class:div.className = 'red blue'(全覆盖)
+* 改class:div.classList.add('red')
+* 改style:div.style = 'width:100px;color:blue;'
+* 改style的一部分:div.style.backgroundColor:='while'
+* 改data-*属性：div.dataset.x='mmy'
+#### 读标准属性
+* div.classList/a.herf
+* div.getAttribute('class')/a.getAttribute('href')
+* 两种方法都可以，但值可能稍微有些不同
+### 改事件处理函数
+* div.onclick默认为NUll
+* 默认点击div不会有任何事情发生
+* 但是如果你把div.onclick改为一个函数
+* 并且是这样调用的fn.call(div,event)
+* div会被当做this
+* event则包含了时间点击的所有信息，如，坐标
+* div.addEventListener
+* 是div.onclick的升级版
+### 改内容
+#### 该文本内容
+* div.innerText ='sss'
+* div.textCountent = 'xxx'
+* 两者几乎没有区别
+#### 改HTML内容
+* div.innerHtML = '<strong>重要内容</strong>'
+#### 改标签
+* div.innerHTML = ''//先清空
+* div.appendChild(div2)//再加内容
+### 改爸爸
+* newParent.appendChild(div)//直接这样就可以了，直接在原来的地方消失
