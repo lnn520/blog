@@ -113,3 +113,74 @@
 * div.appendChild(div2)//再加内容
 ### 改爸爸
 * newParent.appendChild(div)//直接这样就可以了，直接在原来的地方消失
+
+###查
+#### 查爸爸
+* node.parentNode或者node.parentElement
+#### 查爷爷
+* node.parentNode.parent.Node
+#### 查子代
+* node.childNodes或者node.children
+#### 查兄弟姐妹
+* node.parentNode.childNode
+* node.oarentNode.children
+* 还要排除自己
+#### 查看老大
+* node.firstChild
+#### 查看最后一个子元素
+* node.lastChild
+#### 查看上一个哥哥
+* node.previousSibliing
+#### 查看下一个妹妹
+* node.nextSibling
+# DDM操作时跨线程的
+* 浏览器分为渲染引擎和JS引擎
+### 跨线程操作
+#### 各线程各司其职
+* JS引擎不能操作页面，只能操作JS
+* 渲染引擎不能操作JS,只能操作页面
+* document.body.appChild(div1)
+* 这句JS只如何改变页面的？
+#### 跨线程通信
+* 当浏览器发现JS在body里面加了个div1对象
+* 浏览器就会通知渲染引擎在页面里也新增一个div元素
+* 新增的div元素所有属性都照抄div1对象
+#### 图示跨线程操作
+![](https://github.com/lnn520/picture-blog/blob/main/dom%20(2).png)
+
+### 插入新标签的完整过程
+#### 在div1放入页面之前
+* 你对div1所有的操作都属于JS线程的操作
+#### 把div1放入页面之时
+* 浏览器会发现JS的意图
+* 就会通知渲染线程在页面中渲染div1对应的元素
+#### 把div1放入页面之后
+* 你对div1的操作都有可能会触发重新渲染
+* div1.id = 'newId'可能会重新渲染，也可能不会
+* div1.title = 'new'可能会重新渲染，也可能不会
+* 如果你连续对div1多次操作，浏览器可能会合并成一个操作，也可能不会
+## 属性同步
+#### 标准属性
+* 对div1的标准属性的修改，会被浏览器同步到页面中
+* 比如id,className,title
+#### data-*属性
+* 同上
+#### 非标准属性
+* 对非标准属性的修改，则只会停留在JS线程中
+不会同步到代码
+* 比如你添加了 xxx属性
+#### 启示
+* 如果你有自定义的属性，又想被同步到页面中，请使用data-作为前缀
+### 图示
+![](https://github.com/lnn520/picture-blog/blob/main/dom%20(1).png)
+
+# propertyv.s.Attribute
+### property属性
+* JS线程中DIV1的所有属性，叫做div1的property
+### attribute也是属性
+* 渲染引擎中div1对应标签属性，叫做attribute
+### 区别
+* 大部分时候，同名的property和attribute值相等
+* 但如果不是标准属性，那么它两只会在一开始时相等
+* 但注意attribute只支持字符串
+* 而property支持字符串，布尔等类型
